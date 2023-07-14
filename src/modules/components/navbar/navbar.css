@@ -1,0 +1,19 @@
+a{
+    font-size:24px;
+    color: red;
+}
+
+nav{
+    box-shadow: 0px 0px 2px grey;
+    width: 100%;
+}
+@media screen and (max-width:520px) {
+    a{
+        font-size:16px;
+        color: red;
+    }
+    
+    img{
+        width: 150px;
+    }
+}

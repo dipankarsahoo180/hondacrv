@@ -1,0 +1,19 @@
+<template>
+    <template for:each={variants} for:item="item">
+        <div key={item.variant}>
+            <input type="radio" 
+                name="variants" 
+                id={item.variant} 
+                checked={item.checked} 
+                value={item.variant} 
+                class="slds-hidden"
+                onchange={selectionHandler}/> 
+            <label 
+                for={item.variant} 
+                class="slds-radio_label variant-label">
+                    <span>{item.variant} </span>
+                    <span>From {item.formattedPrice}</span>
+            </label>
+        </div>
+    </template>
+</template>

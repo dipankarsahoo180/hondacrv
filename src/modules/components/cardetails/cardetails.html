@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds_size_12-of-12">
+            <img src={_selectedVariant.selectedimage} alt="Honda Image" srcset="">
+        </div>
+        <div class="slds-col slds_size_12-of-12 slds-large-size_4-of-12 slds-text-align_center">
+            <div><strong>{_selectedVariant.fuelConsumption}</strong></div>
+            <div>Fuel Consumption (litres/km)<sup>D32</sup></div>
+        </div>
+        <div class="slds-col slds_size_12-of-12 slds-large-size_4-of-12 slds-text-align_center">
+            <div><strong>{_selectedVariant.seatingCapacity}</strong></div>
+            <div>Seating Capacity</div>
+        </div>
+        <div class="slds-col slds_size_12-of-12 slds-large-size_4-of-12 slds-text-align_center">
+            <div><strong>{_selectedVariant.allowWheels}</strong></div>
+            <div>Alloy Wheels</div>
+        </div>
+    </div>
+</template>

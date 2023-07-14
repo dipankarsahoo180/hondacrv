@@ -1,0 +1,44 @@
+{
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "routes": [
+        {
+            "id": "example",
+            "path": "/example",
+            "layoutTemplate":"$layoutsDir/main.html",
+            "rootComponent": "example/app",
+            "bootstrap":{
+                "syntheticShadow":true
+            }
+        },
+        {
+            "id": "buildAndPrice",
+            "path": "/build_and_price",
+            "layoutTemplate":"$layoutsDir/main.html",
+            "rootComponent": "pages/buildAndPrice",
+            "bootstrap":{
+                "syntheticShadow":true
+            }
+        },
+        {
+            "id": "Home",
+            "path": "/",
+            "layoutTemplate":"$layoutsDir/main.html",
+            "rootComponent": "pages/home",
+            "bootstrap":{
+                "syntheticShadow":true
+            }
+        }
+    ],
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/public/assets"
+        },
+        {
+            "alias": "favicon",
+            "file": "$rootDir/src/assets/favicon.ico",
+            "urlPath": "/favicon.ico"
+        }
+    ]
+}
