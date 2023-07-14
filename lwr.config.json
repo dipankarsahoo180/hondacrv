@@ -2,15 +2,6 @@
     "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
     "routes": [
         {
-            "id": "example",
-            "path": "/example",
-            "layoutTemplate":"$layoutsDir/main.html",
-            "rootComponent": "example/app",
-            "bootstrap":{
-                "syntheticShadow":true
-            }
-        },
-        {
             "id": "buildAndPrice",
             "path": "/build_and_price",
             "layoutTemplate":"$layoutsDir/main.html",

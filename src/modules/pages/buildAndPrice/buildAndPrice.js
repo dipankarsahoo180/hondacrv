@@ -73,8 +73,6 @@ export default class BuildAndPrice extends LightningElement {
     }
 
     selectionHandler(evt){
-        console.warn('selected event ',evt.detail.selectedProperty);
-        console.warn('selected event ',evt.detail.variant);
         const {selectedProperty,variant} = evt.detail;
         this.selectedVariant = {...selectedProperty, imageName:this.selectedImageName};
         this.selectedPrice = this.selectedVariant.price;
@@ -84,7 +82,6 @@ export default class BuildAndPrice extends LightningElement {
 
     //Handler for when a color is selected
     colorSelectionHandler(event){
-        console.log("selected color", event.detail);
         this.selectedImageName = event.detail;
         this.selectedVariant = {...this.selectedVariant,imageName:this.selectedImageName};
         this.updateColors(this.selectedImageName);

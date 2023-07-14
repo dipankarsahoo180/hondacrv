@@ -1,14 +1,16 @@
 <template>
     <main class="">
-        <div class="slds-p-around_medium slds-grid slds-wrap slds-m-bottom_large">
+        <div class="slds-p-around_medium slds-grid slds-wrap">
             <div class="slds-col slds-size_12-of-12 slds-large-size_8-of-12">
                 <components-cardetails selected-variant={selectedVariant}></components-cardetails>
             </div>
+
             <div class="slds-col slds-size_12-of-12 slds-large-size_4-of-12">
+                
                 <h2 class="slds-text-heading_large">CR-V Range</h2>
                 <components-range-selection variants={crvVariants} onselection={selectionHandler}></components-range-selection>
-                <h2 class="slds-text-heading_large slds-m-top_large">CR-V Colors</h2>
                 
+                <h2 class="slds-text-heading_large slds-m-top_large">CR-V Colors</h2>
                 <template for:each={colorsList} for:item="item">
                     <components-color-selection color={item} key={item.value}
                     oncolorselection={colorSelectionHandler}></components-color-selection>
