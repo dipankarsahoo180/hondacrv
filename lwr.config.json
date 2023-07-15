@@ -18,6 +18,15 @@
             "bootstrap":{
                 "syntheticShadow":true
             }
+        },
+        {
+            "id": "ThankYou",
+            "path": "/success",
+            "layoutTemplate":"$layoutsDir/main.html",
+            "rootComponent": "pages/thankYou",
+            "bootstrap":{
+                "syntheticShadow":true
+            }
         }
     ],
     "assets": [
